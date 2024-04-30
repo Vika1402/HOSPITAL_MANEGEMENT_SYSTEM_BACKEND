@@ -1,6 +1,9 @@
 import app from "./app.js";
 import cloudinary from "cloudinary";
 import dotenv from "dotenv";
+import cors from "cors";
+
+app.use(cors());
 
 dotenv.config();
 cloudinary.v2.config({
